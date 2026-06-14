@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion'
-import { Plane, Mountain, Hotel, Map, Users, Globe, ArrowUpRight } from 'lucide-react'
+import { Plane, Mountain, Hotel, Map, Users, Globe, ArrowUpRight, Compass } from 'lucide-react'
 import { siteContent } from '../../data/siteContent'
 import { useScrollReveal } from '../../hooks/useScrollReveal'
 
-const iconMap = { Plane, Mountain, Hotel, Map, Users, Globe }
+const iconMap = { Plane, Mountain, Hotel, Map, Users, Globe, Compass }
 
 function ServiceCard({ service, index }) {
   const Icon = iconMap[service.icon] || Globe

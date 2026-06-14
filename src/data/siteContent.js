@@ -94,6 +94,33 @@ export const siteContent = {
       image:
         'https://images.unsplash.com/photo-1488085061387-422e29b40080?w=600&q=80&auto=format&fit=crop',
     },
+    {
+      id: 7,
+      icon: 'Mountain',
+      title: 'Shimla Packages',
+      description:
+        'Customized tour packages to Shimla covering scenic toy train rides, Kufri hills, Jakhoo Temple, and snow adventures.',
+      image:
+        'https://cdn.sanity.io/images/ocl5w36p/ihcl_prod/58a4e97ca5d74b96f9c9c5b23bc043face4518e6-1280x1760.jpg?w=380',
+    },
+    {
+      id: 8,
+      icon: 'Compass',
+      title: 'Kerala Packages',
+      description:
+        'Tailored holidays to Kerala. Explore backwaters of Alleppey in houseboats, Munnar tea gardens, and Kovalam beaches.',
+      image:
+        'https://images.unsplash.com/photo-1593693397690-362cb9666fc2?w=600&q=80&auto=format&fit=crop',
+    },
+    {
+      id: 9,
+      icon: 'Map',
+      title: 'Ladakh Packages',
+      description:
+        'Unforgettable road trips and flight tours to Ladakh. Traverse Leh, pristine Pangong Lake, and Nubra Valley.',
+      image:
+        'https://images.unsplash.com/photo-1581793745862-99fde7fa73d2?w=600&q=80&auto=format&fit=crop',
+    },
   ],
 
   destinations: [
