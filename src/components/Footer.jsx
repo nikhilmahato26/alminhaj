@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, MessageCircle } from 'lucide-react'
+import { Phone, Mail, MapPin, MessageCircle, Facebook, Instagram, Globe } from 'lucide-react'
 import { siteContent } from '../data/siteContent'
 
 export default function Footer() {
@@ -23,14 +23,45 @@ export default function Footer() {
             <p className="font-body text-sm leading-relaxed text-brand-light/50 max-w-sm mb-6">
               Your trusted travel partner for seamless journeys across India and around the world — from Kashmir's snow peaks to global shores.
             </p>
-            <a
-              href={`https://wa.me/${brand.whatsapp}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-[#25D366]/15 border border-[#25D366]/30 text-[#25D366] font-heading font-semibold tracking-widest uppercase text-xs px-5 py-3 hover:bg-[#25D366] hover:text-white transition-all duration-300"
-            >
-              <MessageCircle size={14} /> WhatsApp Us
-            </a>
+            <div className="flex flex-wrap items-center gap-4 mt-6">
+              <a
+                href={`https://wa.me/${brand.whatsapp}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-[#25D366]/15 border border-[#25D366]/30 text-[#25D366] font-heading font-semibold tracking-widest uppercase text-xs px-5 py-3 hover:bg-[#25D366] hover:text-white transition-all duration-300"
+              >
+                <MessageCircle size={14} /> WhatsApp Us
+              </a>
+              <div className="flex items-center gap-2">
+                <a
+                  href={brand.socials.facebook}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full border border-brand-light/10 flex items-center justify-center text-brand-light/50 hover:text-brand-accent hover:border-brand-accent transition-all duration-300"
+                  aria-label="Facebook"
+                >
+                  <Facebook size={16} />
+                </a>
+                <a
+                  href={brand.socials.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full border border-brand-light/10 flex items-center justify-center text-brand-light/50 hover:text-brand-accent hover:border-brand-accent transition-all duration-300"
+                  aria-label="Instagram"
+                >
+                  <Instagram size={16} />
+                </a>
+                <a
+                  href={brand.socials.google}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full border border-brand-light/10 flex items-center justify-center text-brand-light/50 hover:text-brand-accent hover:border-brand-accent transition-all duration-300"
+                  aria-label="Google Listing"
+                >
+                  <Globe size={16} />
+                </a>
+              </div>
+            </div>
           </div>
 
           {/* Quick Links */}

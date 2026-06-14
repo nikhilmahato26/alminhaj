@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Menu, X, Phone } from 'lucide-react'
+import { Menu, X, Phone, Facebook, Instagram, Globe } from 'lucide-react'
 import { siteContent } from '../data/siteContent'
 
 export default function Navbar() {
@@ -143,6 +143,35 @@ export default function Navbar() {
               <a href="#contact" className="btn-primary justify-center" onClick={() => setMenuOpen(false)}>
                 Book Now
               </a>
+              <div className="flex items-center justify-center gap-6 mt-6">
+                <a
+                  href={brand.socials.facebook}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-11 h-11 rounded-full border border-brand-primary/10 flex items-center justify-center text-brand-primary hover:text-brand-accent hover:border-brand-accent transition-all duration-300"
+                  aria-label="Facebook"
+                >
+                  <Facebook size={20} />
+                </a>
+                <a
+                  href={brand.socials.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-11 h-11 rounded-full border border-brand-primary/10 flex items-center justify-center text-brand-primary hover:text-brand-accent hover:border-brand-accent transition-all duration-300"
+                  aria-label="Instagram"
+                >
+                  <Instagram size={20} />
+                </a>
+                <a
+                  href={brand.socials.google}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-11 h-11 rounded-full border border-brand-primary/10 flex items-center justify-center text-brand-primary hover:text-brand-accent hover:border-brand-accent transition-all duration-300"
+                  aria-label="Google Listing"
+                >
+                  <Globe size={20} />
+                </a>
+              </div>
             </div>
           </motion.div>
         )}
